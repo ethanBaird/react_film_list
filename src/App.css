@@ -2,11 +2,16 @@ body {
   background-color: #C4E0F9;
 }
 
+h1 {
+  color: #B95F89
+}
+
 .App {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
   border-radius: 5px;
+  box-shadow: 0 0 16px grey;
   width: 80%;
   margin: 2rem auto;
   padding: 1rem;
@@ -14,12 +19,28 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
 }
 
 .film-list {
   display: flex;
   flex-direction: column;
   width: 60%;
+  background-color: #C4E0F9;
+  border-radius: 5px;
+  box-shadow: 0 0 16px grey;
+  margin: 2rem auto;
+}
+
+.film-list  a {
+  color: #211103;
+  text-decoration: none;
+}
+
+.film-list  a:hover {
+  color :#B95F89;
+  text-decoration: underline;
 }
 
 .film-form {
@@ -34,18 +55,22 @@ body {
   justify-content: center;
   height: 100px;
   width: 30%;
+  box-shadow: 0 0 16px grey;
 }
 
 .film-form > input {
   margin: 0.25rem 1rem;
   width: 100%;
   border-radius: 5px;
-  
+  color: #211103;
 }
 
 .submit {
-  background-color: #B95F89;
-  color: grey;
-  border-style: solid;
+  background-color: #fff;
+  border-style: inset;
+}
+
+.submit:hover {
+  cursor: pointer;
 }
 

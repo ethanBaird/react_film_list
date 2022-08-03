@@ -39,14 +39,14 @@ const FilmsBox = () => {
     return (
         <>
             <h1>Upcoming Film Releases for UK</h1>
-            <div className="container">
+            <div className="wrapper">
             <FilmsList films={films}/>
                 <FilmForm onFilmSubmit={(film) => {addFilm(film)}}/>
             </div>
             
 
             <a href="https://www.imdb.com/calendar/?region=gb">
-                <input type='submit' value='see more'/>
+                <input type='submit' value='see more' className="see-more"/>
             </a>
             
         </>
